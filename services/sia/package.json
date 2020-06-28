@@ -2,7 +2,7 @@
   "name": "sia",
   "version": "1.0.0",
   "description": "OCR Microservice",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
     "start": "node .",
     "tsc": "tsc",
