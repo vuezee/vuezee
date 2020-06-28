@@ -1,0 +1,32 @@
+language: node_js
+node_js:
+  - 13
+
+services:
+  - docker
+
+# Pre-testing installs
+install:
+  - echo "nothing needs to be installed"
+
+# Scripts to be run such as tests
+before_script:
+  - echo "no tests"
+
+script:
+  - docker --version # print the version for logging
+  - docker build -t eurus ./services/eurus
+  - docker tag eurus vuezee/eurus:latest
+  - docker build -t helios ./services/helios
+  - docker tag helios vuezee/helios:latest
+  - docker build -t ianus ./services/ianus
+  - docker tag ianus vuezee/ianus:latest
+  - docker build -t sia ./services/sia
+  - docker tag sia vuezee/sia:latest
+
+after_success:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker push vuezee/eurus
+  - docker push vuezee/helios
+  - docker push vuezee/ianus
+  - docker push vuezee/sia

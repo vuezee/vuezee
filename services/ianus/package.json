@@ -1,0 +1,11 @@
+{
+  "name": "ianus",
+  "version": "1.0.0",
+  "description": "Load Balancer Microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "ovidb",
+  "license": "ISC"
+}
