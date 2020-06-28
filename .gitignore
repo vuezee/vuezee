@@ -217,3 +217,4 @@ dist
 .yarn/build-state.yml
 .pnp.*
 
+www
