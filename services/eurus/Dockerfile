@@ -1,9 +1,8 @@
 FROM node:12-alpine AS builder
 WORKDIR /app
 COPY . .
-RUN npm install react-scripts -g --silent
-RUN yarn install
-RUN yarn run build
+RUN npm install
+RUN npm run build
 
 FROM node:12-alpine
 RUN yarn global add serve
