@@ -1,0 +1,11 @@
+{
+  "name": "helios",
+  "version": "1.0.0",
+  "description": "Users API Microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "ovidb",
+  "license": "ISC"
+}

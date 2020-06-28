@@ -1,0 +1,11 @@
+{
+  "name": "sia",
+  "version": "1.0.0",
+  "description": "OCR Microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "ovidb",
+  "license": "ISC"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "vuezee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy:eurus": "cd services/eurus/deploy && ./deploy.sh",
+    "deploy:helios": "cd services/helios/deploy && ./deploy.sh",
+    "deploy:ianus": "cd services/ianus/deploy && ./deploy.sh",
+    "deploy:sia": "cd services/sia/deploy && ./deploy.sh",
+    "deploy:all": "npm run deploy:eurus && npm run deploy:helios && npm run deploy:ianus && npm run deploy:sia"
+  },
+  "author": "ovidb",
+  "license": "ISC"
+}
