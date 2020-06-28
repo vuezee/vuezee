@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: helios
-          image: vuzee/helios
+          image: vuezee/helios
           ports:
             - containerPort: 8080
 

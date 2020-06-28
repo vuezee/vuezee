@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: sia
-          image: vuzee/sia
+          image: vuezee/sia
           ports:
             - containerPort: 8080
 
